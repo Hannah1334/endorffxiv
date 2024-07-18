@@ -1,887 +1,339 @@
-<script>resizeTo(screen.availWidth, screen.availHeight);</script> 
-<script language=javascript>document.title=("ᴇ ɴ ᴅ ᴏ ʀ")</script>
+<script>resizeTo(screen.availWidth, screen.availHeight);</script>
+<script language=javascript>document.title=("e n d o r")</script>
 
 <style>
+
 body{
-background-image: url('https://i.imgur.com/M5NDKq9.png') !important; 
-background-repeat:no-repeat !important; 
+background-image: url('') !important;
+background-repeat:no-repeat !important;
 background-position:center !important;
-background-size:100% 100%;
-background-color:#061428;
+background-size:cover;
+background-color:#E3EFFF;
 }
 
-::-webkit-scrollbar {width: 5px; height: 5px;}
-::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #081637;}
+.intro,
+.intro a{
+  color:#39506F;
+  font-family:
+  z-index:0;
+}
 
-#bigcontainer {
+.snowflake {
+  color: #39506F;
+  font-size: 1em;
+  font-family: Arial;
+  tex-align:center;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:000;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+#head {
 position:absolute;
-background-color:rgba(6, 20, 40, 0.8);
-width:60%;
-height:70%;
-left:20%;
-top:15%;
-}
-
-#tabline {
-position:absolute;
-background-color:#122041;
-width:60%;
-height:4%;
-left:20%;
-top:21%;
-}
-
-#tabbox1 {
-position:absolute;
-width:10%;
-height:4%;
-left:42%;
-top:21%;
-text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Roboto Condensed', sans-serif;
-text-transform:uppercase;
-letter-spacing:3px;
-line-height:2.6;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox1:hover {
-background-color:#081637;
-color:#445273;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox2 {
-position:absolute;
-width:10%;
-height:4%;
-left:55.5%;
-top:21%;
-text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Roboto Condensed', sans-serif;
-text-transform:uppercase;
-letter-spacing:3px;
-line-height:2.6;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox2:hover {
-background-color:#081637;
-color:#445273;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox3 {
-position:absolute;
-width:10%;
-height:4%;
-left:69%;
-top:21%;
-text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Roboto Condensed', sans-serif;
-text-transform:uppercase;
-letter-spacing:3px;
-line-height:2.6;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox3:hover {
-background-color:#081637;
-color:#445273;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#iconpicborder1 {
-position:absolute;
-background-color:#122041;
-width:6%;
-height:12%;
-left:21%;
-top:17%;
-}
-
-#iconpic1 {
-position:absolute;
-background-color:#061428;
-width:4%;
-height:8%;
-left:22%;
-top:19%;
-background-image: url('https://i.imgur.com/25x4zip.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
-}
-
-#iconpicborder2 {
-position:absolute;
-background-color:#122041;
-width:6%;
-height:12%;
-left:28%;
-top:17%;
-}
-
-#iconpic2 {
-position:absolute;
-background-color:#061428;
-width:4%;
-height:8%;
-left:29%;
-top:19%;
-background-image: url('https://i.imgur.com/an7Q8YA.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
-}
-
-#iconpicborder3 {
-position:absolute;
-background-color:#122041;
-width:6%;
-height:12%;
-left:35%;
-top:17%;
-}
-
-#iconpic3 {
-position:absolute;
-background-color:#061428;
-width:4%;
-height:8%;
-left:36%;
-top:19%;
-background-image: url('https://i.imgur.com/7jTvBOn.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
-}
-
-#primarytitle {
-position:absolute;
-background-color:#061428;
-width:37%;
-height:4%;
-left:42%;
-top:17%;
-text-align:center;
-font-size:3.2vh;
-color:#445273;
-font-family: 'Dancing Script', cursive;
-letter-spacing:3px;
-}
-
-#secondarytitle {
-position:absolute;
-background-color:#061428;
-width:37%;
-height:4%;
-left:42%;
-top:25%;
-text-align:center;
-font-size:2.5vh;
-color:#445273;
-font-family: 'Roboto Condensed', sans-serif;
-letter-spacing:3px;
-line-height:1.6;
-}
-
-#missionstatement {
-position:absolute;
-padding:1%;
-overflow:hidden;
-width:18%;
-height:12%;
-left:21%;
-top:31%;
-text-align:justify;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-line-height:1.7;
-}
-
-#stat1title {
-position:absolute;
-background-color:#1C2A4B;
-width:6%;
-height:4%;
-left:21%;
-top:49%;
-text-align:center;
-font-size:2.5vh;
-line-height:1.5;
-color:#6C7A9B;
-font-family: 'Dancing Script', cursive;
-}
-
-#stat1 {
-position:absolute;
-background-color:#081637;
-width:13%;
-height:4%;
-left:28%;
-top:49%;
-text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Roboto Condensed', sans-serif;
-line-height:2.6;
-}
-
-#stat2title {
-position:absolute;
-background-color:#1C2A4B;
-width:6%;
-height:4%;
-left:21%;
-top:55%;
-text-align:center;
-font-size:2.5vh;
-line-height:1.5;
-color:#94A2C3;
-font-family: 'Dancing Script', cursive;
-}
-
-#stat2 {
-position:absolute;
-background-color:#081637;
-width:13%;
-height:4%;
-left:28%;
-top:55%;
-text-align:center;
-font-size:1.5vh;
-color:#B2C0CD;
-font-family: 'Roboto Condensed', sans-serif;
-line-height:2.6;
-}
-
-#stat3title {
-position:absolute;
-background-color:#1C2A4B;
-width:6%;
-height:4%;
-left:21%;
-top:61%;
-text-align:center;
-font-size:2.5vh;
-line-height:1.5;
-color:#6C7A9B;
-font-family: 'Dancing Script', cursive;
-}
-
-#stat3 {
-position:absolute;
-background-color:#081637;
-width:13%;
-height:4%;
-left:28%;
-top:61%;
-text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Roboto Condensed', sans-serif;
-line-height:2.6;
-}
-
-#stat4title {
-position:absolute;
-background-color:#1C2A4B;
-width:6%;
-height:4%;
-left:21%;
-top:67%;
-text-align:center;
-font-size:2.5vh;
-line-height:1.5;
-color:#94A2C3;
-font-family: 'Dancing Script', cursive;
-}
-
-#stat4 {
-position:absolute;
-background-color:#081637;
-width:13%;
-height:4%;
-left:28%;
-top:67%;
-text-align:center;
-font-size:1.5vh;
-color:#B2C0CD;
-font-family: 'Roboto Condensed', sans-serif;
-line-height:2.6;
-}
-
-#stat5title {
-position:absolute;
-background-color:#1C2A4B;
-width:6%;
-height:4%;
-left:21%;
-top:73%;
-text-align:center;
-font-size:2.5vh;
-line-height:1.5;
-color:#6C7A9B;
-font-family: 'Dancing Script', cursive;
-}
-
-#stat5 {
-position:absolute;
-background-color:#081637;
-width:13%;
-height:4%;
-left:28%;
-top:73%;
-text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Roboto Condensed', sans-serif;
-line-height:2.6;
-}
-
-#stat6title {
-position:absolute;
-background-color:#1C2A4B;
-width:6%;
-height:4%;
-left:21%;
-top:79%;
-text-align:center;
-font-size:2.5vh;
-line-height:1.5;
-color:#94A2C3;
-font-family: 'Dancing Script', cursive;
-}
-
-#stat6 {
-position:absolute;
-background-color:#081637;
-width:13%;
-height:4%;
-left:28%;
-top:79%;
-text-align:center;
-font-size:1.5vh;
-color:#B2C0CD;
-font-family: 'Roboto Condensed', sans-serif;
-line-height:2.6;
-}
-
-#content {
-position:absolute;
-overflow:hidden;
-width:37%;
-height:52%;
-left:42%;
-top:31%;
-}
-
-#occupationtitle {
-position:absolute;
-background-color:#1C2A4B;
-width:40%;
-height:8%;
-left:0%;
+background-color:#39506F;
+width:100%;
+height:42px;
 top:0%;
-text-align:center;
-font-size:2vh;
-line-height:2;
-color:#6C7A9B;
-font-family: 'Roboto Condensed', sans-serif;
+left:0%;
 }
 
-#occupation {
+#headtext {
 position:absolute;
-width:40%;
-height:8%;
-left:0%;
+background-color:;
+width:;
+height:42px;
+top:0%;
+left:40%;
+font-family: 'Old Standard TT', cursive;
+color:#FFFFFF;
+line-height:3;
+text-align:center;
+font-size:1.5vh;
+letter-spacing:5px;
+}
+
+
+
+#mainboxleft {
+position:absolute;
+background-color:#BBC7D7;
+width:28%;
+height:88%;
 top:8%;
-text-align:center;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-line-height:3;
+left:2%;
 }
 
-#arcranktitle {
+#basicscontainer {
 position:absolute;
-background-color:#1C2A4B;
-width:40%;
-height:8%;
-left:0%;
-top:16%;
-text-align:center;
-font-size:2vh;
-line-height:2;
-color:#6C7A9B;
-font-family: 'Roboto Condensed', sans-serif;
-}
-
-#arcrank {
-position:absolute;
-width:40%;
-height:8%;
-left:0%;
-top:24%;
-text-align:center;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-line-height:3;
-}
-
-#gcranktitle {
-position:absolute;
-background-color:#1C2A4B;
-width:40%;
-height:8%;
-left:0%;
-top:32%;
-text-align:center;
-font-size:2vh;
-line-height:2;
-color:#6C7A9B;
-font-family: 'Roboto Condensed', sans-serif;
-}
-
-#gcrank {
-position:absolute;
-width:40%;
-height:8%;
-left:0%;
-top:40%;
-text-align:center;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-line-height:3;
-}
-
-#dottedline {
-position:absolute;
-border-bottom:2px dotted #94A2AF;
-width:40%;
-top:48%;
-}
-
-#magictitle {
-position:absolute;
-background-color:#1C2A4B;
-width:40%;
-height:8%;
-left:0%;
-top:52%;
-text-align:center;
-font-size:2vh;
-line-height:2;
-color:#94A2C3;
-font-family: 'Roboto Condensed', sans-serif;
-}
-
-#summonericon {
-position:absolute;
-width:5%;
-height:8%;
-left:0%;
-top:60%;
-background-image: url('https://i.imgur.com/0L5aGIy.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
-}
-
-#magic1 {
-position:absolute;
-width:35%;
-height:8%;
-left:5%;
-top:60%;
-text-align:center;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-line-height:2.8;
-}
-
-#asticon {
-position:absolute;
-width:5%;
-height:8%;
-left:0%;
-top:68%;
-background-image: url('https://i.imgur.com/jyBSiOe.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
-}
-
-#magic2 {
-position:absolute;
-width:35%;
-height:8%;
-left:5%;
-top:68%;
-text-align:center;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-line-height:2.8;
-}
-
-#craftingtitle {
-position:absolute;
-background-color:#1C2A4B;
-width:40%;
-height:8%;
-left:0%;
-top:76%;
-text-align:center;
-font-size:2vh;
-line-height:2;
-color:#94A2C3;
-font-family: 'Roboto Condensed', sans-serif;
-}
-
-#culicon {
-position:absolute;
-width:5%;
-height:8%;
-left:0%;
-top:84%;
-background-image: url('https://i.imgur.com/5DlVTuO.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
-}
-
-#crafting1 {
-position:absolute;
-width:35%;
-height:8%;
-left:5%;
-top:84%;
-text-align:center;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-line-height:2.8;
-}
-
-#alicon {
-position:absolute;
-width:5%;
-height:8%;
-left:0%;
-top:92%;
-background-image: url('https://i.imgur.com/YDk1JVB.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
-}
-
-#crafting2 {
-position:absolute;
-width:35%;
-height:8%;
-left:5%;
-top:92%;
-text-align:center;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-line-height:2.8;
-}
-
-#briefdescrip {
-position:absolute;
-padding:1%;
-overflow:auto;
-background-color:rgba(6, 20, 40, 0.8);
-width:55%;
-height:40%;
-left:43%;
-top:0%;
-text-align:justify;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-}
-
-#pic1 {
-position:absolute;
-width:23%;
-height:52%;
-left:43%;
-top:48%;
-background-image: url('https://i.imgur.com/PtZCbtC.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:cover;
-}
-
-#pic2 {
-position:absolute;
-width:31%;
-height:24%;
-left:69%;
-top:48%;
-background-image: url('https://i.imgur.com/2h3uMyD.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:cover;
-}
-
-#pic3 {
-position:absolute;
-width:31%;
-height:24%;
-left:69%;
-top:76%;
-background-image: url('https://i.imgur.com/eTl2tAk.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:100% 100%;
-}
-
-#backstorypic {
-position:absolute;
-width:50%;
-height:100%;
-left:0%;
-top:0%;
-background-image: url('https://i.imgur.com/iYgkdpS.png') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important;
-background-size:cover;
-}
-
-#backstory {
-position:absolute;
-padding:1%;
-overflow:auto;
-width:46%;
-height:97%;
-left:52%;
-top:0%;
-text-align:justify;
-font-family: 'Gayathri', sans-serif;
-font-size:1.5vh;
-color:#FFFFFF;
-}
-
-#scrollingcontainer {
-position:absolute;
-overflow:auto;
-width:100%;
-height:100%;
-}
-
-#title1 {
-position:absolute;
-background-color:#122041;
-width:100%;
-height:7%;
-left:0%;
-top:0%;
-text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Roboto Condensed', sans-serif;
-text-transform:uppercase;
-letter-spacing:3px;
-line-height:2.6;
-}
-
-#halfira {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:0%;
-top:7%;
-}
-
-#maerec {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:35%;
-top:7%;
-}
-
-#endor {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:70%;
-top:7%;
-}
-
-#title2 {
-position:absolute;
-background-color:#122041;
-width:100%;
-height:7%;
-left:0%;
-top:30%;
-text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Roboto Condensed', sans-serif;
-text-transform:uppercase;
-letter-spacing:3px;
-line-height:2.6;
-}
-
-#member1 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:0%;
-top:37%;
-}
-
-#member2 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:35%;
-top:37%;
-}
-
-#member3 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:70%;
-top:37%;
-}
-
-#member4 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:0%;
-top:67%;
-}
-
-#member5 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:35%;
-top:67%;
-}
-
-#member6 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:70%;
-top:67%;
-}
-
-#member7 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:0%;
-top:97%;
-}
-
-#member8 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:35%;
-top:97%;
-}
-
-#member9 {
-position:absolute;
-background-color:#061428;
-width:30%;
-height:23%;
-left:70%;
-top:97%;
-}
-
-#friendicon {
-position:absolute;
-width:22%;
-height:40%;
-left:5%;
-top:7%;
-}
-
-#friendtext1 {
-position:absolute;
-width:65%;
+background-color:#39506F;
+width:24%;
 height:18%;
-left:30%;
-top:7%;
-text-align:center;
-font-size:1.5vh;
-color:#666666;
-font-family: 'Roboto Condensed', sans-serif;
-line-height:1.4;
+top:12%;
+left:28%;
 }
 
-#friendtext2 {
+#basicspicborder {
 position:absolute;
-width:65%;
-height:18%;
-left:30%;
-top:31%;
-text-align:center;
-font-size:1.5vh;
-color:#94A2AF;
-font-family: 'Roboto Condensed', sans-serif;
-line-height:1.4;
+background-color:#E3EFFF;
+width:7%;
+height:14%;
+top:14%;
+left:29%;
 }
 
-#friendtext3 {
+#basicspicpartner {
 position:absolute;
-width:90%;
-height:35%;
+background-color:#E3EFFF;
+width:15%;
+height:14%;
+top:14%;
+left:36%;
+}
+
+
+#basicstext1 {
+position:absolute;
+background-color:;
+width:20%;
+height:65%;
+top:5%;
+left:4%;
+}
+
+#secondaryboxleft {
+position:absolute;
+background-color:#BBC7D7;
+width:25%;
+height:88%;
+top:8%;
+left:29%;
+}
+
+#basicscontainer2 {
+position:absolute;
+background-color:#39506F;
+width:48%;
+height:20%;
+top:72%;
+left:4%;
+text-align:center;
+color:#39506F;
+}
+
+#basicscontextboxleft {
+position:absolute;
+background-color:#E3EFFF;
+width:10%;
+height:16%;
 left:5%;
-top:55%;
+top:74%;
+}
+
+#basicscontextboxright {
+position:absolute;
+background-color:#E3EFFF;
+width:10%;
+height:16%;
+left:41%;
+top:74%;
+}
+
+#navbox1 {
+position:absolute;
+background-color:#39506F;
+width:11%;
+height:8%;
+top:34%;
+left:28%;
+}
+
+#tabbutton1 {
+position:absolute;
+background-color:#E3EFFF;
+width:9%;
+height:4%;
+top:36%;
+left:29%;
 text-align:center;
-font-size:1.5vh;
-color:#FFFFFF;
-font-family: 'Gayathri', sans-serif;
-line-height:1.6;
+color:#39506F;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbutton1:hover {
+background-color:#39506F;
+color:#E3EFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#navbox2 {
+position:absolute;
+background-color:#39506F;
+width:11%;
+height:8%;
+top:47%;
+left:28%;
+}
+
+#tabbutton2 {
+position:absolute;
+background-color:#E3EFFF;
+width:9%;
+height:4%;
+top:49%;
+left:29%;
+text-align:center;
+color:#39506F;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbutton2:hover {
+background-color:#39506F;
+color:#E3EFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#navbox3 {
+position:absolute;
+background-color:#39506F;
+width:11%;
+height:8%;
+top:60%;
+left:28%;
+}
+
+#tabbutton3 {
+position:absolute;
+background-color:#E3EFFF;
+width:9%;
+height:4%;
+top:62%;
+left:29%;
+text-align:center;
+color:#39506F;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbutton3:hover {
+background-color:#39506F;
+color:#E3EFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#navbox4 {
+position:absolute;
+background-color:#39506F;
+width:11%;
+height:8%;
+top:34%;
+left:41%;
+}
+
+#tabbutton4 {
+position:absolute;
+background-color:#E3EFFF;
+width:9%;
+height:4%;
+top:36%;
+left:42%;
+text-align:center;
+color:#39506F;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbutton4:hover {
+background-color:#39506F;
+color:#E3EFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#navbox5 {
+position:absolute;
+background-color:#39506F;
+width:11%;
+height:8%;
+top:47%;
+left:41%;
+}
+
+#tabbutton5 {
+position:absolute;
+background-color:#E3EFFF;
+width:9%;
+height:4%;
+top:49%;
+left:42%;
+text-align:center;
+color:#39506F;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbutton5:hover {
+background-color:#39506F;
+color:#E3EFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#navbox6 {
+position:absolute;
+background-color:#39506F;
+width:11%;
+height:8%;
+top:60%;
+left:41%;
+}
+
+#tabbutton6 {
+position:absolute;
+background-color:#E3EFFF;
+width:9%;
+height:4%;
+top:62%;
+left:42%;
+text-align:center;
+color:#39506F;
+font-family: 'Acme', sans-serif;
+text-transform:uppercase;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbutton6:hover {
+background-color:#39506F;
+color:#E3EFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 .tabs{
@@ -899,452 +351,386 @@ transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-#tab1,#tab2,#tab3 {
-display: none;
+#tab1,#tab11,#tab2,#tab22,#tab3,#tab33,#tab4,#tab44,#tab5,#tab55,#tab6,#tab66 {
+display:none;
 }
 
-i {
-color:#94A2AF;
+#mainboxright {
+position:absolute;
+background-color:#BBC7D7;
+width:42%;
+height:88%;
+top:8%;
+left:56%;
 }
 
-u {
-color:#94A2AF;
+#maintextbox {
+position:absolute;
+background-color:#FFFFFF;
+overflow:auto;
+width:36%;
+height:76%;
+top:12%;
+left:58%;
+padding:1%;
+font-size:1.4vh;
+}
+
+#moselle {
+position:absolute;
+background-color:#BBC7D7;
+width:46%;
+height:20%;
+}
+
+#leoncault {
+position:absolute;
+background-color:#BBC7D7;
+width:46%;
+height:20%;
+left:51.5%;
+}
+
+#lyngsath {
+position:absolute;
+background-color:#BBC7D7;
+width:46%;
+height:20%;
+top:25%;
+}
+
+#thubyrgeim {
+position:absolute;
+background-color:#BBC7D7;
+width:46%;
+height:20%;
+left:51.5%;
+top:25%;
+}
+
+#cenra {
+position:absolute;
+background-color:#BBC7D7;
+width:46%;
+height:20%;
+top:48%;
+}
+
+#maerec {
+position:absolute;
+background-color:#BBC7D7;
+width:46%;
+height:20%;
+top:48%;
+left:51.5%;
 }
 
 a {
-color:#666666;
+color:#617897;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
 a:hover {
-color:#0851A5;
+color:#39506F;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
+h1 {
+color: #FFFFFF;
+background-color:#39506F;
+border-left:10px solid #617897;
+border-right:10px solid #617897;
+font-family: 'Satisfy', cursive;
+text-align:center;
+font-size: 2.2vh;
+}
+
+i {
+color:#666666;
+}
+
 b {
-color:#0851A5;
-text-transform:uppercase;
-font-family: 'Roboto Condensed', sans-serif;
+color:#39506F;
+font-family: 'Acme', sans-serif;
 }
 
-.snowflake {
-  color: #283877;
-  font-size: 1em;
-  font-family: Arial, sans-serif;
-  text-shadow: 0 0 5px #000;
-}
-
-@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
 </style>
 
-<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur816.cur), auto !important;}</style>
-<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gayathri|Roboto+Condensed&display=swap" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
 
-<html>
+
+<link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Old+Standard+TT|Satisfy" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('maintextbox').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('basicstext1').innerHTML=document.getElementById(id).innerHTML}</script>
+
 
 <div class="snowflakes" aria-hidden="true">
+ 
   <div class="snowflake">
-  ☆
+ ⠀✧
   </div>
   <div class="snowflake">
-  ★
+  ✦
   </div>
   <div class="snowflake">
   ⋆
   </div>
   <div class="snowflake">
-  ✧
+  ✩
   </div>
   <div class="snowflake">
-  ☆
+  ✩
+  </div>
+  <div class="snowflake">
+  ⠀✧
+  </div>
+  <div class="snowflake">
+ ⋆
   </div>
   <div class="snowflake">
   ★
   </div>
   <div class="snowflake">
-    ⋆
+  ✦
   </div>
   <div class="snowflake">
-    ✧
-  </div>
-  <div class="snowflake">
-    ☆
-  </div>
-  <div class="snowflake">
-    ★
-  </div>
-  <div class="snowflake">
-    ⋆
-  </div>
-  <div class="snowflake">
-    ✧
+  ⠀✧
   </div>
 </div>
 
-<div id="bigcontainer"></div>
-<div id="tabline"></div>
-<div id="tabbox1">
-<span class="tabs" onClick="changeNavigation ('tab1')">Backstory</span>
+<div id="head">
+<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1103882164/size=small/bgcol=ffffff/linkcol=63b2cc/artwork=none/track=2967074686/transparent=true/" seamless><a href="https://wyeoak.bandcamp.com/album/the-louder-i-call-the-faster-it-runs">The Louder I Call, The Faster It Runs by Wye Oak</a></iframe>
+<div id="headtext">
+this carrd doesn't translate to mobile very well - best viewed on desktop
 </div>
-<div id="tabbox2">
-<span class="tabs" onClick="changeNavigation ('tab2')">Comrades</span>
-</div>
-<div id="tabbox3">
-<span class="tabs" onClick="changeNavigation ('tab3')">Information</span>
-</div>
-<div id="iconpicborder1"></div>
-<div id="iconpic1"></div>
-<div id="iconpicborder2"></div>
-<div id="iconpic2"></div>
-<div id="iconpicborder3"></div>
-<div id="iconpic3"></div>
-<div id="primarytitle">
-Endor Dalah 
-</div>
-<div id="secondarytitle">
-<FONT COLOR="#94A2C3">⋆ ⋆ ⋆ <FONT COLOR="#FFFFFF">☆</FONT></FONT> Of the Eastern Skies <FONT COLOR="#94A2C3"><FONT COLOR="#FFFFFF">☆</FONT> ⋆ ⋆ ⋆</FONT>
 </div>
 
-<div id="missionstatement">
-<FONT COLOR="#94A2AF">❝</FONT> Amass, Research, Contain; to protect Eorzea from the untold secrets of the past. Artifact hunters and glory seekers alike, welcome! <FONT COLOR="#94A2AF">❞</FONT>
+<div id="mainboxleft">
+</div>
+
+
+<div id="basicstext1">
+<img width="100%" height="" align="center" src="https://i.postimg.cc/SK7qBRkf/ffxiv-dx11-TRUEREALISM-Base-Indoor-2024-06-21-18-42-02.png">
+</div>
+
+<div id="secondaryboxleft">
+</div>
+
+<div id="basicscontainer2">
+<img width="" height="100%" src="https://i.postimg.cc/zGNzD6pj/Ornamental-Floral-Vintage-Star-PNG.png">
+<img width="" height="100%" src="https://i.postimg.cc/bwvSmXPJ/ffxiv-dx11-TRUEREALISM-Base-Indoor-2024-06-21-18-45-15.png">
+<img width="" height="100%" src="https://i.postimg.cc/tRf3Z4G5/ffxiv-dx11-TRUEREALISM-Base-Indoor-2024-06-21-18-52-58.png">
+<img width="" height="100%" src="https://i.postimg.cc/zGNzD6pj/Ornamental-Floral-Vintage-Star-PNG.png">
+</div>
+
+<div id="basicscontextboxleft">
+<h1>Positive Traits</h1>
+<p style="margin-left:5%;">Bold <br>
+Determined <br>
+Excitable <br>
+Intellectual</p>
+</div>
+<div id="basicscontextboxright">
+<h1>Negative Traits</h1>
+<p style="margin-left:5%;">Naive <br>
+Stubborn <br>
+Petty <br>
+Proud</p>
+</div>
+
+<div id="navigationthread">
+</div>
+
+<div id="basicscontainer">
+</div>
+<div id="basicspicborder">
+<img width="100%" height="100%" align="center" src="https://i.postimg.cc/7Lnqvy8p/ffxiv-dx11-TRUEREALISM-Base-Night-2024-06-17-17-57-551.png">
+</div>
+<div id="basicspicpartner">
+<p style="margin-left:5%; margin-top:4%;"><b>Name:</b> <u>Endor Dalah</u><br>
+<b>Age:</b> <u>Late Twenties</u><br>
+<b>Birthplace:</b> <u>Hingashi</u><br>
+<b>Nameday:</b> <u>26th Sun of the 1st Astral Moon</u><br>
+<b>Occupation:</b> <u>Adventurer</u></p>
+</div>
+
+<div id="navbox1">
+</div>
+<div id="tabbutton1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab11')">
+<p style="margin-top:6%;">Home</p></span>
+</div>
+<div id="navbox2">
+</div>
+<div id="tabbutton2">
+<span class="tabs" onClick="changeNavigation ('tab2');changeNavigation1 ('tab22')">
+<p style="margin-top:6%;">Arcanima</p></span>
+</div>
+<div id="navbox3">
+</div>
+<div id="tabbutton3">
+<span class="tabs" onClick="changeNavigation ('tab3');changeNavigation1 ('tab33')">
+<p style="margin-top:6%;">Connections</p></span>
+</div>
+<div id="navbox4">
+</div>
+<div id="tabbutton4">
+<span class="tabs" onClick="changeNavigation ('tab4');changeNavigation1 ('tab44')">
+<p style="margin-top:6%;">History</p></span>
+</div>
+<div id="navbox5">
+</div>
+<div id="tabbutton5">
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab55')">
+<p style="margin-top:6%;">Astrology</p></span>
+</div>
+<div id="navbox6">
+</div>
+<div id="tabbutton6">
+<span class="tabs" onClick="changeNavigation ('tab6');changeNavigation1 ('tab66')">
+<p style="margin-top:6%;">Contact</p></span>
+</div>
+
+
+<div id="mainboxright">
+</div>
+<div id="maintextbox">
+<h1>The Opal Raen</h1>
+<img width="100%" height="" align="top" src="https://i.postimg.cc/j2CWwryK/Fz-Pimofa-QAEYVf8.jpg">
+<br><br>
+<b>Race:</b> <u>Au Ra - Raen</u>
+<br> 
+Endor’s complexion is noticeably pale. Her skin and hair lack pigment, contrasted by light reflecting a rainbow of vibrant color off her white scales. It’s common to hear reference to her as “The Opal Raen” with scales nearer to the gemstones of their namesake than they are to typical Au Ra—a trait inherited from her mother’s bloodline. 
+<br><br>
+Pallid coloring is confined to a petite frame. She stands no taller than 4’9” and weighs far too little for someone her age. Though the typical hourglass shape often attributed to the female form is plenty present in her silhouette, there’s something off about how small her wrists and ankles are. 
+<br><br>
+If one were to assume Endor to be ill, they’d be correct. Another genetic inheritance provided by her mother is an unknown illness with several visible side effects: albinism to varying degrees, and an inability to gain significant weight or muscle mass. The disease is known to drastically shorten the lives of her forebears, and reduce their quality of life to greater extremes the longer they survive. 
 <br>
-<p align="right">-- <u>ARC</u> Mission Statement</p>
-</div>
-<div id="stat1title">
-Name:
-</div>
-<div id="stat1">
-Endor Dalah
-</div>
-<div id="stat2title">
-Age:
-</div>
-<div id="stat2">
-Twenty Three
-</div>
-<div id="stat3title">
-Nameday:
-</div>
-<div id="stat3">
-26th Sun, 1st Astral Moon
-</div>
-<div id="stat4title">
-Gender:
-</div>
-<div id="stat4">
-Female
-</div>
-<div id="stat5title">
-Race:
-</div>
-<div id="stat5">
-Au Ra [ Raen ]
-</div>
-<div id="stat6title">
-G. Company:
-</div>
-<div id="stat6">
-Immortal Flames
-</div>
-
-<div id="content">
-<div id="occupationtitle">
-Occupation
-</div>
-<div id="occupation">
-Adventurer / Ul'Dah Chef
-</div>
-<div id="arcranktitle">
-The ARC Initiative
-</div>
-<div id="arcrank">
-Co-Founder
-</div>
-<div id="gcranktitle">
-The Immortal Flames
-</div>
-<div id="gcrank">
-Flame Captain
-</div>
-<div id="dottedline"></div>
-<div id="magictitle">
-Disciple of Magic
-</div>
-<div id="summonericon"></div>
-<div id="magic1">
-<b>Summoner:</b> Level 80
-</div>
-<div id="asticon"></div>
-<div id="magic2">
-<b>Astrologian:</b> Level 80
-</div>
-<div id="craftingtitle">
-Disciple of Hand
-</div>
-<div id="culicon"></div>
-<div id="crafting1">
-<b>Culinarian:</b> Level 80
-</div>
-<div id="alicon"></div>
-<div id="crafting2">
-<b>Alchemist:</b> Level 80
-</div>
-<div id="briefdescrip">
-<b>Appearance:</b> 
-The ARC Initiative's avid artifact researcher--and collector--hails from a bloodline of Raen albinos. Her skin is nearly as pale in color as the long white hair sprouting from the top of her head, not to mention the glossy scale patterns that decorate her curving horns, long flexible tail, and can even be found splashed over various parts of her skin. Sky blue eyes are accented well by pastel limbal rings, adding a brightness to her charming and youthful features. Endor's stature fits the meek stereotype of a bookworm: she is petite and rather vertically challenged. Not that it comes as a surprise, such things are to be expected of a small and dainty female Au Ra.
-<br><br>
-<b>Personality:</b> 
-Most would define her as naive, and while this is true, it is not for lack of experience. In fact, the well traveled Flames Officer is overbearingly positive to a stubborn point, often leading to unintentional condescending mannerisms when in the presence of cynics. Despite her uppity attitude she's a genuinely kind heart who means well and absolutely adores those that can be considered friend (and also carbuncles).
-<br><br>
-</div>
-<a target="_blank" href="https://i.imgur.com/PtZCbtC.png"><div id="pic1"></div></a>
-<a target="_blank" href="https://i.imgur.com/amMBwiZ.png"><div id="pic2"></div></a>
-<a target="_blank" href="https://i.imgur.com/eTl2tAk.png"><div id="pic3"></div></a>
+Despite this, the young Raen maintains an active lifestyle and a fulfilling practice in arcane artistry.
 </div>
 
 <div id="tab1">
-<div id="backstorypic"></div>
-<div id="backstory">
-<i>**</i><b>Note:</b><i>**</i> The following is a very basic timeline of events in Endor's history. Right now it is merely filler so that there's ample text taking up space in this div. Eventually I will exchange what's shown below with a real backstory written out proper.
+<h1>The Opal Raen</h1>
+<img width="100%" height="" align="top" src="https://i.postimg.cc/j2CWwryK/Fz-Pimofa-QAEYVf8.jpg">
 <br><br>
-<p align="center"><b> [ </b><u>13</u> years old during the <b>Calamity</b> (<i>1572</i>)<b> ] </b></p>
-<li>13 (1572) - Finds the Arcanist tome buried in her family’s belongings, falls in love with Carbuncles</li>
-<li>14 (1573) - Journeys to Limsa Lominsa to become an Arcanist and familiarize herself with Eorzea (filthy immigrants), leaving her family behind surprisingly much to their enthusiasm. Is encouraged to seek out a better life for herself.</li>
-<li>15 (1574) - Steady/decent progress is made, trades a lot of study time for work time to stay alive/afloat. Takes up a job in a local restaurant, serves lots of Adventurers and listens to their tales with awe and wonder.</li>
-<li>16 (1575) - Starts out as an adventurer, naive and inexperienced, ends up in over her head and meets/gets rescued by Halfi (how does she get in over her head? Find out next time on Dragon Ball Fantasy)</li>
-<li>17 (1576) - Inspired by her hero, starts to take her training SERIOUSLY</li>
-<li>18 (1577) - Graduates to a Summoner, takes off into the sunset to Ul’Dah to pursue a fruitful culinary career. Wanderlust plays a part with peer pressure, leading to her enlistment into the Immortal Flames.</li>
-<li>19-22 (1578-1580) - Continues to serve Ul’Dah via Immortal Flames, steadily rising through the ranks until reaching a station that allows her some semblance of authority, mostly enough to delegate tasks on the shoulders of her poor lessers so she has some free time again. Just enough to sate her bookworm tendencies and desire to adventure.</li>
-<li>23 (1581) - Receives an urgent letter from her dear friend after a worrying halt to the normal consistent messages, asking her to meet for an urgent meeting with her emissary. Meets up with Halfir and Maerec, the FC is officially founded.</li>
+<b>Race:</b> <u>Au Ra - Raen</u>
+<br> 
+Endor’s complexion is noticeably pale. Her skin and hair lack pigment, contrasted by light reflecting a rainbow of vibrant color off her white scales. It’s common to hear reference to her as “The Opal Raen” with scales nearer to the gemstones of their namesake than they are to typical Au Ra—a trait inherited from her mother’s bloodline. 
+<br><br>
+Pallid coloring is confined to a petite frame. She stands no taller than 4’9” and weighs far too little for someone her age. Though the typical hourglass shape often attributed to the female form is plenty present in her silhouette, there’s something off about how small her wrists and ankles are. 
+<br><br>
+If one were to assume Endor to be ill, they’d be correct. Another genetic inheritance provided by her mother is an unknown illness with several visible side effects: albinism to varying degrees, and an inability to gain significant weight or muscle mass. The disease is known to drastically shorten the lives of her forebears, and reduce their quality of life to greater extremes the longer they survive. 
+<br>
+Despite this, the young Raen maintains an active lifestyle and a fulfilling practice in arcane artistry.
 </div>
+<div id="tab11">
+<img width="100%" height="" align="center" src="https://i.postimg.cc/SK7qBRkf/ffxiv-dx11-TRUEREALISM-Base-Indoor-2024-06-21-18-42-02.png">
+</div>
+
+<div id="tab4">
+<h1>Family History</h1>
+<img width="100%" height="" align="top" src="https://i.postimg.cc/3RTCtKZG/ffxiv-dx11-TRUEREALISM-Base-Cafe-2024-06-18-19-06-43.png">
+<br><br>
+As a child born from a traditional marriage, Endor is given her father’s surname. The Dalah clan is a long-standing Raen family that began in the Azim Steppe long ago, before the Raen tribes began migrating away from their Xaela kin. Contributions to the arts, and investments in developing trade routes, solidified their name in the annals of history while amassing them a great fortune. High expectations join hands with greedy politics in their ways of life. 
+<br><br>
+Equally as intriguing, her mother’s surname bears a storied history of its own. The Iteya clan, another old Raen family, was known to produce exceptional warriors. Ninjas and Samurais born among them were comparable to prodigies with skills unmatched. Endor’s mother herself–Sume Iteya–was a Samurai in service to the Doman Royal Family before Garlemald’s invasion. 
+<br><br>
+Sume bore ten children for her husband. Endor Dalah was the last to be born before her mother’s illness escalated drastically and sentenced her to a life of pitiful confinement. As the only child to inherit her mother’s condition, Endor was deemed her caretaker from a very young age. The two spent all their time together, garnering a favoritism that isolated her from the rest of her siblings through growing resentment. 
+<br><br>
+When Garlemald began expanding on their significant presence in Hingashi, Sume panicked and made the brash decision to ship her youngest to Eorzea–where the empire that brought her homeland to heel had yet to find success in their many attempts.  
+<br><br>
+Endor does not openly discuss her family or her physical condition, but she’s happy to share how she managed to survive the last twelve years in Limsa Lominsa.
+</div>
+<div id="tab44">
+<img width="100%" height="" align="center" src="https://i.postimg.cc/SK7qBRkf/ffxiv-dx11-TRUEREALISM-Base-Indoor-2024-06-21-18-42-02.png">
 </div>
 
 <div id="tab2">
-<div id="scrollingcontainer">
-<div id="title1">
-F o u n d e r s
+<h1>Carbuncle Appreciator</h1>
+<img width="100%" height="" align="top" src="https://i.postimg.cc/DzXQYLNL/ffxiv-dx11-TRUEREALISM-Base-Cafe-2024-06-18-18-28-06.png">
+<br><br>
+Endor displayed an incredible understanding of intricate patterns and mathematics at a young age. At only ten namedays she manifested her carbuncle for the first time. The youth was immediately attached to her arcane companion, naming it Ume and showering it with immeasurable love and care. To this day her bond with Ume remains, and together they’ve managed to accomplish many notable feats. 
 </div>
-<div id="halfira">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/ybtCDHc.png"/>
+<div id="tab22">
+<img width="" height="100%" align="center" src="https://i.postimg.cc/wxVXP6wf/ffxiv-dx11-TRUEREALISM-Base-Cafe-2024-06-18-17-59-28.png">
 </div>
-<div id="friendtext1">
-<b>H</b>alfira <b>O</b>karo
+
+<div id="tab5">
+<h1>Daughter of The Spinner</h1>
+<img width="100%" height="" align="top" src="https://i.postimg.cc/j5q5Jry2/ffxiv-dx11-TRUEREALISM-Base-Night-2024-06-17-21-05-37.png">
+<br><br>
+Feeling alone and vulnerable on a new continent at such a young age, Endor found more comfort in Eorzean faith than in the teachings of her homeland. She forged a particularly strong bond with The Spinner, naming Nymeia as her patron deity. A fascination with Astrology naturally followed, and Endor desperately sought knowledge of the mysterious magics. Her threads of Fate were spun in crossing with that of a Sharlayan Viera named Cenra Shev, who mentored her in the art.  
 </div>
-<div id="friendtext2">
-Female Au Ra
-</div>
-<div id="friendtext3">
-Leader, top authority<br>of the Arc Initiative.
-</div>
-</div>
-<div id="maerec">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/qp4VrDw.png"/>
-</div>
-<div id="friendtext1">
-<b>M</b>aerec <b>W</b>olfshowl
-</div>
-<div id="friendtext2">
-Male Hyur
-</div>
-<div id="friendtext3">
-Co-Founder, fellow leader<br>of the Arc Initiative.
-</div>
-</div>
-<div id="endor">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/9GBvL62.png"/>
-</div>
-<div id="friendtext1">
-<b>E</b>ndor <b>D</b>alah
-</div>
-<div id="friendtext2">
-Female Au Ra
-</div>
-<div id="friendtext3">
-Co-Founder, fellow leader<br>of the Arc Initiative.
-</div>
-</div>
-<div id="title2">
-M e m b e r s
-</div>
-<div id="member1">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/E6cLo3R.png"/>
-</div>
-<div id="friendtext1">
-<b>S</b>enna <b>M</b>akiri
-</div>
-<div id="friendtext2">
-Female Miqo'te
-</div>
-<div id="friendtext3">
-Young researcher and<br>collector of artifacts.
-</div>
-</div>
-<div id="member2">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/FCUxMWA.png"/>
-</div>
-<div id="friendtext1">
-<b>T</b>race <b>G</b>oodman
-</div>
-<div id="friendtext2">
-Male Miqo'te
-</div>
-<div id="friendtext3">
-Trained Paladin and<br>defender of the innocent.
-</div>
-</div>
-<div id="member3">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/jP4Ksvc.png"/>
-</div>
-<div id="friendtext1">
-<b>D</b>'veasa <b>B</b>hen
-</div>
-<div id="friendtext2">
-Female Miqo'te
-</div>
-<div id="friendtext3">
-Trained Dragoon and<br>legal Maelstrom Pirate.
-</div>
-</div>
-<div id="member4">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/3q8vyJR.png"/>
-</div>
-<div id="friendtext1">
-<b>K</b>hal <b>T</b>susorn
-</div>
-<div id="friendtext2">
-Male Au Ra
-</div>
-<div id="friendtext3">
-Empty headed muscle<br>and valued squad member.
-</div>
-</div>
-<div id="member5">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/MDZCGlX.png"/>
-</div>
-<div id="friendtext1">
-<b>B</b>'rahneh <b>T</b>ia
-</div>
-<div id="friendtext2">
-Male Miqo'te
-</div>
-<div id="friendtext3">
-Skittish young man in<br>need of protection.
-</div>
-</div>
-<div id="member6">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/PkjUpPL.png"/>
-</div>
-<div id="friendtext1">
-<b>K</b>oga <b>K</b>oniko
-</div>
-<div id="friendtext2">
-Male Au Ra
-</div>
-<div id="friendtext3">
-Devoted Maelstrom Officer<br>and good friend.
-</div>
-</div>
-<div id="member7">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/1UYjdTn.png"/>
-</div>
-<div id="friendtext1">
-<b>C</b>uhas'a <b>M</b>afahtiir
-</div>
-<div id="friendtext2">
-Male Miqo'te
-</div>
-<div id="friendtext3">
-Eagerly confident treasure<br>and glory seeker.
-</div>
-</div>
-<div id="member8">
-<div id="friendicon">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/PYl5mzI.png"/>
-</div>
-<div id="friendtext1">
-<b>N</b>arumi <b>C</b>hosai
-</div>
-<div id="friendtext2">
-Female Au Ra
-</div>
-<div id="friendtext3">
-New Flames recruit<br>and talented Black Mage.
-</div>
-</div>
-<div id="member9">
-</div>
-</div>
+<div id="tab55">
+<img width="" height="110%" align="center" src="https://i.postimg.cc/prpLqYGt/ffxiv-dx11-TRUEREALISM-Base-Night-2024-06-17-21-37-36.png">
 </div>
 
 <div id="tab3">
-<div id="occupationtitle">
-Occupation
+<div id="moselle">
+ <h1>Moselle</h1>
+<img width="80px" height="80px" style="float:left;" src="https://static-00.iconduck.com/assets.00/person-circle-icon-512x512-zwz8ctki.png"><p style="margin-left:90px;"><b>Wildwood Elezen</b><br>Ishgardian<br>Best friend & current employer.</p>
 </div>
-<div id="occupation">
-Adventurer / Ul'Dah Chef
+<div id="leoncault">
+ <h1>Leoncault</h1>
+<img width="80px" height="80px" style="float:left;" src="https://static-00.iconduck.com/assets.00/person-circle-icon-512x512-zwz8ctki.png"><p style="margin-left:90px;"><b>Wildwood Elezen</b><br>Ishgardian<br>Best friend's husband & current employer.</p>
 </div>
-<div id="arcranktitle">
-The ARC Initiative
+<div id="lyngsath">
+ <h1>Lyngsath</h1>
+<img width="80px" height="80px" style="float:left;" src="https://static-00.iconduck.com/assets.00/person-circle-icon-512x512-zwz8ctki.png"><p style="margin-left:90px;"><b>Sea Wolf Roegadyn</b><br>Lominsan<br>Teacher & former employer.</p>
 </div>
-<div id="arcrank">
-Co-Founder
+<div id="thubyrgeim">
+ <h1>Thubyrgeim</h1>
+<img width="80px" height="80px" style="float:left;" src="https://static-00.iconduck.com/assets.00/person-circle-icon-512x512-zwz8ctki.png"><p style="margin-left:90px;"><b>Sea Wolf Roegadyn</b><br>Lominsan<br>Former mentor & close friend.</p>
 </div>
-<div id="gcranktitle">
-The Immortal Flames
+<div id="cenra">
+ <h1>Cenra</h1>
+<img width="80px" height="80px" style="float:left;" src="https://static-00.iconduck.com/assets.00/person-circle-icon-512x512-zwz8ctki.png"><p style="margin-left:90px;"><b>Rava Viera</b><br>Sharlayan<br>Former(?) mentor.</p>
 </div>
-<div id="gcrank">
-Flame Captain
+<div id="maerec">
+ <h1>Maerec</h1>
+<img width="80px" height="80px" style="float:left;" src="https://static-00.iconduck.com/assets.00/person-circle-icon-512x512-zwz8ctki.png"><p style="margin-left:90px;"><b>Highlander Hyur</b><br>Lominsan?<br>....Friend?(?????)</p></div>
 </div>
-<div id="dottedline"></div>
-<div id="magictitle">
-Disciple of Magic
+<div id="tab33">
+<img width="100%" height="" align="center" src="https://i.postimg.cc/SK7qBRkf/ffxiv-dx11-TRUEREALISM-Base-Indoor-2024-06-21-18-42-02.png">
 </div>
-<div id="summonericon"></div>
-<div id="magic1">
-<b>Summoner:</b> Level 80
+
+<div id="tab6">
+<h1>Beyond the Screen</h1>
+<b>Name:</b> Hannah <br>
+<b>Age:</b>26 <br>
+<b>Nameday:</b> August 21st<br>
+<b>Favorite Quote:</b> <u>"There are no bad dogs, only bad owners."</u><br><br>
+
+<p align="center"><font color="#FF0000">♥</font> Married to my best friend <font color="#FF0000">♥</font><br><u>16/08/22</u></p>
+
+<b>Hobbies:</b><br> 
+Gaming (FFXIV is my favorite but I play lots of games)<br>
+Creative Writing<br>
+Writing Music <br>
+Violinist <br><br>
+
+<b>FFXIV Related Hobbies:</b><br> 
+Interior Design! Open for gil commissions.<br>
+Raiding - Endwalker was my first experience with Savage, but Eden Ultimate has my goals set even higher.<br>
+Glamour<br>
+Roleplay<br><br>
+
+There are a lot of variables that make a story enjoyable for me. When it comes to my own writing I like conflict: nothing says character development like drama! I also happen to be a big fan of tragedies, sometimes that’s reflected in my story threads. <br>
+Exploring adult topics through storytelling is a healthy way to work through things, and possibly even bring comfort to others who’ve survived what I’ve lived through. I’m not interested in “nothing ever goes wrong and everybody is always happy 24/7” threads.<br>
+I’m on the Ace/Demi spectrum, so won’t be into any ERP. The topic doesn’t make me uncomfortable, I just have absolutely no interest or desire to participate. The answer will always be no!   <br><br>
+
+Feel free to contact me on my socials.<br><br>
+
+<p align="center">
+<a target="_blank" href="https://discord.com/users/289957729110458374"><img width="40px" height="40px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-round-color-icon.png"></a>
+ <a target="_blank" href="https://www.tumblr.com/endor-ffxiv"><img width="40px" height="40px" src="https://icons.iconarchive.com/icons/sicons/basic-round-social/256/tumblr-icon.png"></a>
+ <a target="_blank" href="https://x.com/powboybecop"><img width="40px" height="40px" src="https://cdn-icons-png.freepik.com/256/145/145812.png?semt=ais_hybrid"></a>
+ <a target="_blank" href="https://crystalclear.carrd.co"><img width="40px" height="40px" src="https://static-00.iconduck.com/assets.00/carrd-icon-256x256-6gbu6t4q.png"></a>
+</p>
 </div>
-<div id="asticon"></div>
-<div id="magic2">
-<b>Astrologian:</b> Level 80
+<div id="tab66">
+<img width="100%" height="" align="center" src="https://i.postimg.cc/SK7qBRkf/ffxiv-dx11-TRUEREALISM-Base-Indoor-2024-06-21-18-42-02.png">
 </div>
-<div id="craftingtitle">
-Disciple of Hand
-</div>
-<div id="culicon"></div>
-<div id="crafting1">
-<b>Culinarian:</b> Level 80
-</div>
-<div id="alicon"></div>
-<div id="crafting2">
-<b>Alchemist:</b> Level 80
-</div>
-<div id="briefdescrip">
-<b>Appearance:</b> 
-The ARC Initiative's avid artifact researcher--and collector--hails from a bloodline of Raen albinos. Her skin is nearly as pale in color as the long white hair sprouting from the top of her head, not to mention the glossy scale patterns that decorate her curving horns, long flexible tail, and can even be found splashed over various parts of her skin. Sky blue eyes are accented well by pastel limbal rings, adding a brightness to her charming and youthful features. Endor's stature fits the meek stereotype of a bookworm: she is petite and rather vertically challenged. Not that it comes as a surprise, such things are to be expected of a small and dainty female Au Ra.
-<br><br>
-<b>Personality:</b> 
-Most would define her as naive, and while this is true, it is not for lack of experience. In fact, the well traveled Flames Officer is overbearingly positive to a stubborn point, often leading to unintentional condescending mannerisms when in the presence of cynics. Despite her uppity attitude she's a genuinely kind heart who means well and absolutely adores those that can be considered friend (and also carbuncles).
-<br><br>
-</div>
-<a target="_blank" href="https://i.imgur.com/PtZCbtC.png"><div id="pic1"></div></a>
-<a target="_blank" href="https://i.imgur.com/amMBwiZ.png"><div id="pic2"></div></a>
-<a target="_blank" href="https://i.imgur.com/eTl2tAk.png"><div id="pic3"></div></a>
-</div>
-  
-<embed style="height: 0%; width: 0%;"src="Endor.mp3" autostart="true" loop="true">
-</html>
